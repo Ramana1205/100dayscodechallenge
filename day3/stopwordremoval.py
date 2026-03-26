@@ -17,5 +17,5 @@ filtered_text = ' '.join(filtered_words)
 print("Original Text:")
 print(text)
 
-print("\nText after Stop Word Removal:")
+print("\nText after removing stopwords:")
 print(filtered_text)
