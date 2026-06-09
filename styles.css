@@ -60,10 +60,20 @@
     margin-top: 20px;
     flex-wrap: wrap;
 }
+
+#projects>a{
+    text-decoration: none;
+    color:#2c5364;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+}
 .stat-card{
     background:rgb(201, 220, 221);
     border-radius: 10px;
     padding: 20px;
+    width:fit-content;
     text-align: center;
      transition: all 0.3s ease;
     width: 150px;
@@ -197,4 +207,11 @@ h1:hover{
 
 .profile:hover{
     transform: scale(1.05);
+}
+footer{
+    background:rgb(26, 31, 60);
+    color:white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
