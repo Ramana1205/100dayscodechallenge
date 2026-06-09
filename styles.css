@@ -61,7 +61,7 @@
     flex-wrap: wrap;
 }
 
-#projects>a{
+#projects>.stat-card>a{
     text-decoration: none;
     color:#2c5364;
     font-size: 16px;
