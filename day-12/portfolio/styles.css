@@ -1,8 +1,91 @@
-h1{
-    font-family:"Bonheur Royale", cursive;
+#resume{
     text-align: center;
-    font-size:5rem;
-    font-weight: 100;
+}
+#resume>button{
+    background:rgb(26, 31, 60);
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    font-size:16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+}
+#resume>button:hover{
+    background:rgb(72, 180, 230);
+}
+#resume>a{
+    text-decoration: none;
+    color:#2c5364;
+    font-size: 16px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+    
+    
+
+}
+#resume>a:hover{
+    color:rgb(72, 180, 230);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-decoration: underline;
+}
+.skills{
+    display:grid;
+    
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+.skills>.card>h1{
+    color:rgb(26, 31, 60);
+    text-align: center;
+    
+     
+}
+.skill-tag{
+    display:inline-block;
+    padding:8px 16px;
+    margin:5px;
+    border-radius:20px;
+    background:#2c5364;
+    color:white;
+    font-size:14px;
+}
+
+.stats{
+    display:flex;
+   justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.stat-card{
+    background:rgb(201, 220, 221);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+     transition: all 0.3s ease;
+    width: 150px;
+}
+.stat-card>h1:hover{
+    color:rgb(139, 101, 85);
+}
+.stat-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.skills>.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.skills>.card{
+    background:rgb(241, 243, 244);
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+
 }
 p{
      font-family:"Poppins", sans-serif;
@@ -14,6 +97,14 @@ p{
 
 
 }
+.container>.heroimages1>h1{
+    font-family:"Bonheur Royale", cursive;
+    text-align: center;
+    font-size:5rem;
+    font-weight: 100;
+
+}
+
 .heroimages{
     display: flex;
     justify-content: center;
