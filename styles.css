@@ -1,6 +1,144 @@
 #resume{
     text-align: center;
 }
+/* =========================
+   MOBILE RESPONSIVE DESIGN
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Hero Logo Sections */
+    .heroimages,
+    .heroimages1 {
+        display: none;
+    }
+
+    /* Name */
+    .container>.heroimages1>h1 {
+        display: block;
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    /* Profile Image */
+    .profile {
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+
+    /* Main Heading */
+    h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    /* Paragraphs */
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 0 15px;
+    }
+
+    /* Resume Section */
+    #resume {
+        padding: 0 10px;
+    }
+
+    #resume>button {
+        width: 220px;
+        font-size: 15px;
+    }
+
+    #resume>a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    /* Skills Section */
+    .skills {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        
+        gap: 15px;
+    }
+
+    .skills>.card {
+        width: auto;
+        margin: 0 10px;
+         width:80%;
+        max-width:300px;
+    }
+
+    .skills>.card>h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Skill Tags */
+    .skill-tag {
+        font-size: 13px;
+        padding: 7px 14px;
+    }
+
+    /* Stats & Projects */
+    .stats {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .stat-card {
+        width: 220px;
+        min-height: 220px;
+    }
+
+    .stat-card h1 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* =========================
+   TABLET RESPONSIVE
+   ========================= */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .heroimages {
+        gap: 100px;
+        padding: 2rem;
+    }
+
+    .heroimages1 {
+        gap: 60px;
+        padding: 2rem;
+    }
+
+    .skill-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        gap: 25px;
+    }
+}
+
 #resume>button{
     background:rgb(26, 31, 60);
     color:white;
@@ -146,7 +284,11 @@ h1:hover{
 }
 .container{
    background:rgb(241, 243, 244);
-}
+   width: 100%;
+
+  }
+
+
 .profile{
     border-radius: 50%;
     height:200px;
